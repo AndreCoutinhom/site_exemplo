@@ -6,9 +6,3 @@ main {
     background: linear-gradient(to right, rgb(255, 0, 93), rgb(138, 0, 230));
 
 }
-
-main p {
-    color: white;
-    padding-left: 10px;
-    padding-right: 10px;
-}
