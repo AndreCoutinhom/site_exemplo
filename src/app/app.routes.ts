@@ -6,7 +6,7 @@ import { ExcluirComponent } from './pages/excluir/excluir.component';
 import { ListarComponent } from './pages/listar/listar.component';
 
 export const routes: Routes = [
-
+    {path:'', component: CadastrarComponent},
     {path: 'cadastrar', component: CadastrarComponent, title: 'Cadastro'},
     {path: 'alterar', component: AlterarComponent, title: 'Alteração'},
     {path: 'consultar', component: ConsultarComponent, title: 'Consulta'},
