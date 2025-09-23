@@ -7,7 +7,6 @@ import { ListarComponent } from './pages/listar/listar.component';
 
 export const routes: Routes = [
 
-    {path:'', redirectTo:'cadastrar'}, //se nenhum botão tiver sido apertado, ir direto para o componente de cadastro
     {path: 'cadastrar', component: CadastrarComponent, title: 'Cadastro'},
     {path: 'alterar', component: AlterarComponent, title: 'Alteração'},
     {path: 'consultar', component: ConsultarComponent, title: 'Consulta'},
