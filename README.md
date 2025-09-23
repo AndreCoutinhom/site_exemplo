@@ -1,3 +1,5 @@
+<img width="1896" height="935" alt="image" src="https://github.com/user-attachments/assets/cd360fa2-cba5-42b3-bb35-71f897434797" />
+
 # SiteExemplo
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.17.
