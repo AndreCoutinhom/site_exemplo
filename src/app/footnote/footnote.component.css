@@ -1,14 +1,14 @@
-main {
+footer {
     width: 90%;
     margin: 0% auto;
     border: 3px solid black;
     margin-top: 5px;
-    background: linear-gradient(to right, rgb(255, 0, 93), rgb(138, 0, 230));
+    background: linear-gradient(to right, #5ce33b, #00b6ab);
 
 }
 
-main p {
+footer p {
     text-align: center;
     font-size: 15px;
-    color: rgb(255, 175, 202);
+    color: rgb(161, 255, 239);
 }

@@ -2,7 +2,7 @@ header {
     width: 90%;
     display: flex;
     flex-direction: row;
-    background: linear-gradient(to right, rgb(255, 0, 93), rgb(138, 0, 230));
+    background: linear-gradient(to right, #5ce33b, #00b6ab);
     margin: 0px auto;
     margin-bottom: 5px;
     padding: 0px;
@@ -34,7 +34,7 @@ nav {
 
 nav a {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 17px;
+    font-size: 14px;
     color: white;
     flex: 1;
     cursor: pointer;
@@ -42,8 +42,8 @@ nav a {
 }
 
 nav a:hover {
-    font-size: 20px;
-    color: black;
+    font-size: 25px;
+    color: #8754b1;
     font-weight: bolder;
 }
 
@@ -51,4 +51,6 @@ img {
     width: 30%;
     padding-left: 5%;
     padding-right: 5%;
+    margin-bottom: 2%;
+    margin-top: 2%;
 }
