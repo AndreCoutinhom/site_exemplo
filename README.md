@@ -84,6 +84,9 @@ For more information on using the Angular CLI, including detailed command refere
 ### Inside the data base run the server with
 `npx json-server data_base.json`
 
+### Inside the project, create a service for databases with
+`npx ng generate service core/services/data_base_component`
+
 ## When commiting project
 
 ### Log in to git with
