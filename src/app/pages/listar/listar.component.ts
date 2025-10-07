@@ -20,4 +20,14 @@ export class ListarComponent implements OnInit {
     });
   }
 
+  //Esse método serve para excluir um cliente da lista e atualizar a tela automaticamente, sem recarregar a página.
+  excluir(id: number) {
+    if (id) {
+      this.service.excluir(id).subscribe(() => {
+        // Remove o cliente com o id correspondente da lista
+        this.listaClientes = this.listaClientes.filter(cliente => cliente.id !== id);
+      });
+    }
+  }
+
 }

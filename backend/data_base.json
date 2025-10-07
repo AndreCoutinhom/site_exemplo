@@ -2,7 +2,7 @@
   "clientes": [
     {
       "id": "1",
-      "nome": "Nick", 
+      "nome": "Nick",
       "email": "nick.wilde@gmail.com",
       "telefone": "(11)976543-0075"
     },
@@ -17,7 +17,12 @@
       "nome": "Benjamin",
       "email": "ben.clwhsr@gmail.com",
       "telefone": "(11)8976-7865"
+    },
+    {
+      "id": "4",
+      "nome": "Bogo",
+      "email": "bogo.chief@gmail.com",
+      "telefone": "(11)91234-4321"
     }
   ]
-
 }

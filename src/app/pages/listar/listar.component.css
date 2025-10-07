@@ -21,7 +21,7 @@ width: 90%;
   
   /* Estilo dos cabeçalhos da tabela */
   thead tr {
-    background-color: #007bff;
+    background-color: #8754b1;
     color: white;
   }
   
@@ -33,12 +33,14 @@ width: 90%;
   
   /* Estilo das linhas do corpo da tabela */
   tbody tr {
-    background-color: #ffffff;
-    border-bottom: 1px solid #ccc;
+    background-color: black;
+    border-bottom: 1px solid #8754b1;
+    border: 1px solid #8754b1;
+    color: white;
   }
   
   tbody tr:hover {
-    background-color: #f1f1f1; /* Destaque no hover */
+    background-color: #2c2c2c; /* Destaque no hover */
   }
   
   /* Ajuste específico para a coluna de Ações */
