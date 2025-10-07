@@ -68,6 +68,9 @@ For more information on using the Angular CLI, including detailed command refere
 ### Install Angular with
 `npm install -g @angular/cli`
 
+### Create new project with
+`npx ng new project_name`
+
 ### Generate new components with
 `npx ng generate component component_name`
 
