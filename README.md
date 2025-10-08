@@ -91,7 +91,7 @@ For more information on using the Angular CLI, including detailed command refere
 
 ### Log in to git with
 `git config --global user.email "email@gmail.com"`
-`git config --global user.name "Name`
+`git config --global user.name "Name"`
 
 ### Commit and syncronize through VS code interface
 
