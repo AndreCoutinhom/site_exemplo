@@ -87,6 +87,39 @@ For more information on using the Angular CLI, including detailed command refere
 ### Inside the project, create a service for databases with
 `npx ng generate service core/services/data_base_component`
 
+### Inside the folder `core` create another folder named `types` and then a typescript file inside this one named `type.ts`
+`cd core`
+`mkdir types`
+`type nul > types.ts`
+
+### You must place each type according to their nature inside this file. Example:
+
+``` typescript
+export interface Farmacia {
+    codigo: number;
+    nome: string;
+    fabricante: string;
+    data_fabricacao: number;
+    data_validade: number;
+    preco: number;
+}
+```
+
+After that, you must alter the typescript file generated in the `services` folder. Add every function and import needed and place the endpoint of the database as the component class. Example:
+
+``` typescript
+@Injectable({
+  providedIn: 'root'
+})
+export class FarmaciaComponent {
+  
+  private readonly API = 'http://localhost:3000/medicamentos';
+
+}
+```
+
+The rest will depend on what kind of application you want to run.
+
 ## When commiting project
 
 ### Log in to git with
@@ -100,3 +133,25 @@ For more information on using the Angular CLI, including detailed command refere
 
 ### Download every dependance necessary
 `npm i`
+
+## Modifying site from zero
+
+Angular has a default website appearence. To start from scratch you must go to `app.html` or `app.component.html` file and leave only the following structure:
+
+``` html
+<router-outlet />
+
+```
+
+You can then organize how you want each interface component to show up on default page:
+
+
+``` html
+<app-cabecalho></app-cabecalho>
+<app-rodape></app-rodape>
+<app-principal></app-principal>
+<router-outlet />
+
+```
+
+Now you can edit the html file for each component in order to build your website.
