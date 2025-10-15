@@ -155,3 +155,48 @@ You can then organize how you want each interface component to show up on defaul
 ```
 
 Now you can edit the html file for each component in order to build your website.
+
+Remember that every accessible component generated must be imported on the `app.ts` file and declared a path on the `app.routes.ts`. Examples:
+
+``` typescript
+// app.ts
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { HeaderComponent } from './header/header.component';
+import { MainComponent } from './main/main.component';
+import { FootnoteComponent } from './footnote/footnote.component';
+
+@Component({
+  selector: 'app-root',
+  imports: [RouterOutlet, HeaderComponent, MainComponent, FootnoteComponent],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
+})
+export class AppComponent {
+  title = 'site_exemplo';
+}
+```
+
+``` typescript
+// app.routes.ts
+import { Routes } from '@angular/router';
+import { CadastrarComponent } from './pages/cadastrar/cadastrar.component';
+import { AlterarComponent } from './pages/alterar/alterar.component';
+import { ConsultarComponent } from './pages/consultar/consultar.component';
+import { ExcluirComponent } from './pages/excluir/excluir.component';
+import { ListarComponent } from './pages/listar/listar.component';
+import { MainComponent } from './main/main.component';
+
+export const routes: Routes = [
+    {path:'', component: MainComponent},
+    {path: 'cadastrar', component: CadastrarComponent, title: 'Cadastro'},
+    {path: 'alterar', component: AlterarComponent, title: 'Alteração'},
+    {path: 'consultar', component: ConsultarComponent, title: 'Consulta'},
+    {path: 'excluir', component: ExcluirComponent, title: 'Exclusão'},
+    {path: 'listar', component: ListarComponent, title: 'Listagem'},
+    {path:'**', redirectTo:''} //se o link for quebrado abra o componente de listagem
+
+];
+```
+
+
